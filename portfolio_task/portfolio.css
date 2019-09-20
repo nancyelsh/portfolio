@@ -1,0 +1,191 @@
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: "Heiti SC", "Malayalam MN", "Times", "Arial";
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222;
+  background: #DADADA;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #8819DD;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  font-family: "Heiti SC", "Malayalam MN", "Times", "Arial";
+  width: 100%;
+  background: #FBFBFB;
+  min-height: 50px;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  font-family: "Heiti SC", "Malayalam MN", "Times", "Arial";
+  font-size: medium;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 20;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: grey;
+}
+
+header {
+  font-family: "Heiti SC", "Malayalam MN", "Times", "Arial";
+  text-align: center;
+  background-color: #FFF;
+  background-size: 2560px 1200px;
+  overflow: hidden;
+  padding-top: 120px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2);
+}
+
+.tag1 {
+  color: black;
+  display: table;
+  margin: 10px auto;
+}
+.tag2 {
+  color: grey;
+  display: table;
+  margin: 10px auto;
+}
+.tag3 {
+  color: #8819DD;
+  display: table;
+  margin: 10px auto;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  text-align: justify;
+}
+.card:hover {
+  border-color: #8819DD;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: table;
+  background: #8819DD;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.skills li:nth-child(odd) {
+  background: grey;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 15;
+  padding: 0;
+}
+
+footer ul li {
+  display:block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
